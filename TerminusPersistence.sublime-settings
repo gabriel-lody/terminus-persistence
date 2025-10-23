@@ -1,0 +1,8 @@
+{
+    // Enable or disable automatic persistence of Terminus panel state
+    "persistence_enabled": true,
+
+    // Internal state (automatically managed, do not edit manually)
+    "terminus_was_visible": false,
+    "terminus_panel_name": null
+}

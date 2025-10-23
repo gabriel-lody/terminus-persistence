@@ -1,0 +1,22 @@
+[
+    {
+        "id": "view",
+        "children": [
+            {
+                "caption": "Terminus",
+                "id": "terminus_submenu",
+                "children": [
+                    {
+                        "caption": "Toggle Panel",
+                        "command": "toggle_terminus_panel"
+                    },
+                    {
+                        "caption": "Toggle Persistence",
+                        "command": "toggle_terminus_persistence",
+                        "checkbox": true
+                    }
+                ]
+            }
+        ]
+    }
+]
