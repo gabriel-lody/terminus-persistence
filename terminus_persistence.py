@@ -89,6 +89,7 @@ class ToggleTerminusPersistenceCommand(sublime_plugin.WindowCommand):
 
         # Toggle the setting
         settings.set("persistence_enabled", not current)
+        sublime.save_settings(SETTINGS_FILE)
 
         # Show status message
         status = "enabled" if not current else "disabled"
