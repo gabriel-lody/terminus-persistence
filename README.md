@@ -84,7 +84,7 @@ TerminusPersistence/
 ├── terminus_persistence.py              # Main plugin code
 ├── TerminusPersistence.sublime-settings # Default settings
 ├── Main.sublime-menu                    # View menu integration
-├── README.md                            # This file
+└── README.md                            # This file
 ```
 
 ### Testing
