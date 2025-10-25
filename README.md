@@ -16,7 +16,7 @@ A minimal Sublime Text plugin that remembers whether your Terminus panel was ope
 
 ## Installation
 
-### Via Package Control (when published)
+### Via Package Control (Recommended)
 
 1. Open Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
 2. Select "Package Control: Install Package"
@@ -32,12 +32,6 @@ A minimal Sublime Text plugin that remembers whether your Terminus panel was ope
    - **Windows**: `%APPDATA%\Sublime Text\Packages\`
 3. Rename the folder to `TerminusPersistence`
 4. Restart Sublime Text
-
-### Quick Install Script (Linux/macOS)
-
-```bash
-./install.sh
-```
 
 ## Usage
 
