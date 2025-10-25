@@ -16,22 +16,12 @@ A minimal Sublime Text plugin that remembers whether your Terminus panel was ope
 
 ## Installation
 
-### Via Package Control (Recommended)
+### Via Package Control
 
 1. Open Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
 2. Select "Package Control: Install Package"
 3. Search for "Terminus Persistence"
 4. Press Enter to install
-
-### Manual Installation
-
-1. Clone or download this repository
-2. Copy the `terminus-persistence` folder to your Sublime Text Packages directory:
-   - **Linux**: `~/.config/sublime-text/Packages/`
-   - **macOS**: `~/Library/Application Support/Sublime Text/Packages/`
-   - **Windows**: `%APPDATA%\Sublime Text\Packages\`
-3. Rename the folder to `TerminusPersistence`
-4. Restart Sublime Text
 
 ## Usage
 
@@ -95,7 +85,6 @@ TerminusPersistence/
 ├── TerminusPersistence.sublime-settings # Default settings
 ├── Main.sublime-menu                    # View menu integration
 ├── README.md                            # This file
-└── install.sh                           # Installation script
 ```
 
 ### Testing
@@ -116,7 +105,7 @@ MIT License - See LICENSE file for details
 
 ## Author
 
-Created for simplicity and convenience.
+Gabriel Lody
 
 ## Acknowledgments
 
