@@ -64,11 +64,10 @@ class ToggleTerminusPersistenceCommand(sublime_plugin.WindowCommand):
 
         # Toggle the setting
         settings.set("persistence_enabled", not current)
-        save_settings()
 
         # Show status message
         status = "enabled" if not current else "disabled"
-        sublime.status_message(f"Terminus Persistence {status}")
+        sublime.status_message("Terminus Persistence {0}".format(status))
 
     def is_checked(self):
         """Show checkmark in menu if enabled."""
