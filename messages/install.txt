@@ -1,0 +1,38 @@
+Terminus Persistence
+===================
+
+Thank you for installing Terminus Persistence!
+
+This plugin automatically remembers whether your Terminus panel was open
+and restores it when you restart Sublime Text.
+
+Features:
+---------
+• Automatic state persistence between sessions
+• View menu integration (View → Terminus)
+• Toggle persistence on/off as needed
+
+Usage:
+------
+The plugin works automatically once installed. Simply use Terminus as normal,
+and it will remember whether the panel was open when you restart Sublime Text.
+
+To toggle persistence:
+  View → Terminus → Toggle Persistence
+
+To manually toggle the Terminus panel:
+  View → Terminus → Toggle Panel
+  or use the default keybinding: Alt+`
+
+Requirements:
+-------------
+• Terminus plugin must be installed via Package Control
+
+Configuration:
+--------------
+Preferences → Package Settings → Terminus Persistence → Settings
+
+For more information, visit:
+https://github.com/gabriel-lody/terminus-persistence
+
+Enjoy!
