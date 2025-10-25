@@ -1,8 +1,11 @@
 import sublime
 import sublime_plugin
+import os
+import json
 
 
 SETTINGS_FILE = "TerminusPersistence.sublime-settings"
+STATE_FILE = "terminus_persistence_state.json"
 
 
 def get_settings():
@@ -10,9 +13,31 @@ def get_settings():
     return sublime.load_settings(SETTINGS_FILE)
 
 
-def save_settings():
-    """Save plugin settings."""
-    sublime.save_settings(SETTINGS_FILE)
+def get_state_file_path():
+    """Get path to state file in Packages/User directory."""
+    return os.path.join(sublime.packages_path(), "User", STATE_FILE)
+
+
+def load_state():
+    """Load plugin state from file."""
+    state_path = get_state_file_path()
+    if os.path.exists(state_path):
+        try:
+            with open(state_path, 'r') as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return {}
+
+
+def save_state(state):
+    """Save plugin state to file."""
+    state_path = get_state_file_path()
+    try:
+        with open(state_path, 'w') as f:
+            json.dump(state, f, indent=2)
+    except Exception:
+        pass
 
 
 def is_terminus_panel_visible(window):
@@ -47,12 +72,12 @@ class TerminusPersistenceListener(sublime_plugin.EventListener):
         # Check if terminus panel is visible
         panel_name = is_terminus_panel_visible(window)
 
-        # Save state
-        settings.set("terminus_was_visible", bool(panel_name))
-        if panel_name:
-            settings.set("terminus_panel_name", panel_name)
-
-        save_settings()
+        # Save state to file
+        state = {
+            "terminus_was_visible": bool(panel_name),
+            "terminus_panel_name": panel_name if panel_name else None
+        }
+        save_state(state)
 
 
 class ToggleTerminusPersistenceCommand(sublime_plugin.WindowCommand):
@@ -94,8 +119,9 @@ def restore_terminus_state():
     if not settings.get("persistence_enabled", True):
         return
 
-    # Check if panel was visible
-    was_visible = settings.get("terminus_was_visible", False)
+    # Load state from file
+    state = load_state()
+    was_visible = state.get("terminus_was_visible", False)
 
     if was_visible:
         # Open the panel using toggle_terminus_panel
