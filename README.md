@@ -29,7 +29,7 @@ A minimal Sublime Text plugin that remembers whether your Terminus panel was ope
 
 Once installed, the plugin works automatically:
 
-1. Open Terminus panel (via `Alt+\`` or View menu)
+1. Open Terminus panel (via `Alt+\`` or Terminus commands)
 2. Close Sublime Text
 3. Reopen Sublime Text
 4. Terminus panel will automatically reopen
@@ -38,7 +38,6 @@ Once installed, the plugin works automatically:
 
 Access via **View → Terminus**:
 
-- **Toggle Panel**: Opens or closes the Terminus panel
 - **Toggle Persistence**: Enables or disables automatic persistence (shows checkmark when enabled)
 
 ## Configuration
@@ -57,9 +56,18 @@ Default settings:
 ## How It Works
 
 1. **On Close**: When you close a Sublime Text window, the plugin checks if a Terminus panel is visible
-2. **State Storage**: The visibility state is saved to plugin settings
+2. **State Storage**: The visibility state is saved to a JSON file in your User directory
 3. **On Startup**: When Sublime Text loads, the plugin waits 1 second (to ensure Terminus is loaded) then restores the panel state
 4. **Configurable**: Persistence can be toggled on/off via the View menu
+
+### Files Created
+
+The plugin creates the following files in your Sublime Text User directory (`Packages/User/`):
+
+- **`terminus_persistence_state.json`**: Stores the panel visibility state between sessions
+  - Contains: `terminus_was_visible` (boolean) and `terminus_panel_name` (string or null)
+  - This file is automatically created and updated when you close Sublime Text
+  - Safe to delete - will be recreated on next close
 
 ## Troubleshooting
 
