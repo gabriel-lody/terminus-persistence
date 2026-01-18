@@ -28,3 +28,6 @@ Thumbs.db
 
 # Package Control
 package-metadata.json
+
+# Distribution
+dist/*.sublime-package
