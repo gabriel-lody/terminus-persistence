@@ -40,9 +40,18 @@ Access via **View → Terminus**:
 
 - **Toggle Persistence**: Enables or disables automatic persistence (shows checkmark when enabled)
 
+### Command Palette
+
+All commands are available via the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`):
+
+- **Terminus Persistence: Toggle Persistence** - Enable or disable persistence
+- **Preferences: Terminus Persistence Settings** - Open settings in split view
+
 ## Configuration
 
-Settings can be accessed via: `Preferences → Package Settings → Terminus Persistence → Settings`
+Settings can be accessed via:
+- **Menu**: `Preferences → Package Settings → Terminus Persistence → Settings`
+- **Command Palette**: `Preferences: Terminus Persistence Settings`
 
 Default settings:
 
@@ -89,10 +98,14 @@ The plugin creates the following files in your Sublime Text User directory (`Pac
 
 ```
 TerminusPersistence/
-├── terminus_persistence.py              # Main plugin code
-├── TerminusPersistence.sublime-settings # Default settings
-├── Main.sublime-menu                    # View menu integration
-└── README.md                            # This file
+├── terminus_persistence.py                 # Main plugin code
+├── TerminusPersistence.sublime-settings    # Default settings
+├── TerminusPersistence.sublime-commands    # Command palette entries
+├── Main.sublime-menu                       # Menu integration
+├── messages.json                           # Installation message config
+├── messages/
+│   └── install.txt                         # Post-install message
+└── README.md                               # This file
 ```
 
 ### Testing

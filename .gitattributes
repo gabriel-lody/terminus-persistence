@@ -1,0 +1,20 @@
+# Exclude files from package distribution (git-archive)
+# See: https://www.git-scm.com/docs/gitattributes#_export_ignore
+
+# Development files
+.gitattributes export-ignore
+.gitignore export-ignore
+
+# IDE and editor files
+.project/ export-ignore
+*.sublime-project export-ignore
+*.sublime-workspace export-ignore
+
+# Claude Code settings
+.claude/ export-ignore
+
+# Distribution files (private package builds)
+dist/ export-ignore
+
+# GitHub files
+.github/ export-ignore

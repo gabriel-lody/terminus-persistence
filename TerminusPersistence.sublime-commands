@@ -1,0 +1,14 @@
+[
+	{
+		"caption": "Terminus Persistence: Toggle Persistence",
+		"command": "toggle_terminus_persistence"
+	},
+	{
+		"caption": "Preferences: Terminus Persistence Settings",
+		"command": "edit_settings",
+		"args": {
+			"base_file": "${packages}/TerminusPersistence/TerminusPersistence.sublime-settings",
+			"default": "{\n\t// Enable or disable automatic persistence of Terminus panel state\n\t\"persistence_enabled\": true\n}\n"
+		}
+	}
+]
