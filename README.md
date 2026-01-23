@@ -135,6 +135,13 @@ Gabriel Lody
 
 ## Changelog
 
+### 0.1.1
+- Add Command Palette support
+- Add settings menu with split view (edit_settings)
+- Add .gitattributes for clean package distribution
+- Remove obsolete state data from settings file
+- Update documentation
+
 ### 0.1.0 (Initial Release)
 - Basic persistence functionality
 - View menu integration
