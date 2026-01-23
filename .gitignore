@@ -30,4 +30,4 @@ Thumbs.db
 package-metadata.json
 
 # Distribution
-dist/*.sublime-package
+dist/

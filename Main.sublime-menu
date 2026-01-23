@@ -1,22 +1,45 @@
 [
-    {
-        "id": "view",
-        "children": [
-            {
-                "caption": "Terminus",
-                "id": "terminus_submenu",
-                "children": [
-                    {
-                        "caption": "Toggle Panel",
-                        "command": "toggle_terminus_panel"
-                    },
-                    {
-                        "caption": "Toggle Persistence",
-                        "command": "toggle_terminus_persistence",
-                        "checkbox": true
-                    }
-                ]
-            }
-        ]
-    }
+	{
+		"id": "view",
+		"children": [
+			{
+				"caption": "Terminus",
+				"id": "terminus_submenu",
+				"children": [
+					{
+						"caption": "Toggle Panel",
+						"command": "toggle_terminus_panel"
+					},
+					{
+						"caption": "Toggle Persistence",
+						"command": "toggle_terminus_persistence",
+						"checkbox": true
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "preferences",
+		"children": [
+			{
+				"id": "package-settings",
+				"children": [
+					{
+						"caption": "Terminus Persistence",
+						"children": [
+							{
+								"caption": "Settings",
+								"command": "edit_settings",
+								"args": {
+									"base_file": "${packages}/TerminusPersistence/TerminusPersistence.sublime-settings",
+									"default": "// Terminus Persistence Settings - User\n// Place your settings in this file to override the defaults\n\n{\n\t$0\n}\n"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
 ]
