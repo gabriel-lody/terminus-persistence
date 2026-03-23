@@ -4,7 +4,7 @@ import os
 import json
 
 
-SETTINGS_FILE = "TerminusPersistence.sublime-settings"
+SETTINGS_FILE = "terminus-persistence.sublime-settings"
 STATE_FILE = "terminus_persistence_state.json"
 
 
