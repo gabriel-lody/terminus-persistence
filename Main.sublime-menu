@@ -22,7 +22,7 @@
 				"id": "package-settings",
 				"children": [
 					{
-						"caption": "Terminus Persistence",
+						"caption": "terminus-persistence",
 						"children": [
 							{
 								"caption": "Settings",
