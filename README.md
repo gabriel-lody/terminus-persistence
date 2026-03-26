@@ -1,4 +1,4 @@
-# Terminus Persistence
+# terminus-persistence
 
 A minimal Sublime Text plugin that remembers whether your Terminus panel was open between sessions and automatically restores it.
 
@@ -20,7 +20,7 @@ A minimal Sublime Text plugin that remembers whether your Terminus panel was ope
 
 1. Open Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
 2. Select "Package Control: Install Package"
-3. Search for "Terminus Persistence"
+3. Search for "terminus-persistence"
 4. Press Enter to install
 
 ## Usage
@@ -44,14 +44,14 @@ Access via **View → Terminus**:
 
 All commands are available via the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`):
 
-- **Terminus Persistence: Toggle Persistence** - Enable or disable persistence
-- **Preferences: Terminus Persistence Settings** - Open settings in split view
+- **terminus-persistence: Toggle Persistence** - Enable or disable persistence
+- **Preferences: terminus-persistence Settings** - Open settings in split view
 
 ## Configuration
 
 Settings can be accessed via:
-- **Menu**: `Preferences → Package Settings → Terminus Persistence → Settings`
-- **Command Palette**: `Preferences: Terminus Persistence Settings`
+- **Menu**: `Preferences → Package Settings → terminus-persistence → Settings`
+- **Command Palette**: `Preferences: terminus-persistence Settings`
 
 Default settings:
 
@@ -88,7 +88,7 @@ The plugin creates the following files in your Sublime Text User directory (`Pac
 
 ### Menu items don't appear
 
-- Ensure the folder is named exactly `TerminusPersistence`
+- Ensure the folder is named exactly `terminus-persistence`
 - Restart Sublime Text
 - Check Console for errors (View → Show Console)
 
@@ -97,10 +97,10 @@ The plugin creates the following files in your Sublime Text User directory (`Pac
 ### Project Structure
 
 ```
-TerminusPersistence/
+terminus-persistence/
 ├── terminus_persistence.py                 # Main plugin code
-├── TerminusPersistence.sublime-settings    # Default settings
-├── TerminusPersistence.sublime-commands    # Command palette entries
+├── terminus-persistence.sublime-settings   # Default settings
+├── terminus-persistence.sublime-commands   # Command palette entries
 ├── Main.sublime-menu                       # Menu integration
 ├── messages.json                           # Installation message config
 ├── messages/

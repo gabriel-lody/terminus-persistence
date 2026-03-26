@@ -1,10 +1,10 @@
 [
 	{
-		"caption": "Terminus Persistence: Toggle Persistence",
+		"caption": "terminus-persistence: Toggle Persistence",
 		"command": "toggle_terminus_persistence"
 	},
 	{
-		"caption": "Preferences: Terminus Persistence Settings",
+		"caption": "Preferences: terminus-persistence Settings",
 		"command": "edit_settings",
 		"args": {
 			"base_file": "${packages}/terminus-persistence/terminus-persistence.sublime-settings",
